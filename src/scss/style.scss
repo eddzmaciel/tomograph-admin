@@ -1,0 +1,43 @@
+// If you want to override variables do it here
+@import 'variables';
+
+// Import styles
+@import '~@coreui/coreui/scss/coreui.scss';
+
+// Temp fix for reactstrap
+@import '~@coreui/coreui/scss/_dropdown-menu-right.scss';
+
+// If you want to add something do it here
+@import 'custom';
+
+// ie fixes
+@import 'ie-fix';
+.btn-primary {
+   color: #fff;
+   background-color: #32d7db;
+   border-color: #269d9f;
+}
+
+.btn-primary:hover {
+   color: #269d9f;
+   background-color: #fff;
+   border-color: #269d9f;
+}
+.bg-primary {
+   background-color: #269d9f !important;
+}
+
+a {
+   color: #269d9f;
+}
+
+.sidebar .nav-link:hover {
+   color: #fff;
+   background: #269d9f;
+}
+
+html body .app.flex-row.align-items-center {
+   height: 100vh;
+   background-image: url('/assets/img/bgBazar.jpg');
+   background-size: cover;
+}
